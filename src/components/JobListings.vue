@@ -34,7 +34,8 @@ const jobs = ref(jobData);
     <a
       href="/jobs"
       class="block bg-black text-white text-center py-4 px-6 rounded-xl hover:bg-gray-700"
-      >View All Jobs</a
     >
+      View All Jobs
+    </a>
   </section>
 </template>
