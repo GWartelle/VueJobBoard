@@ -3,8 +3,11 @@ import jobData from "@/jobs.json";
 import { ref } from "vue";
 import JobListing from "@/components/JobListing.vue";
 
+defineProps({
+  limit: Number,
+});
+
 const jobs = ref(jobData);
-console.log(jobs.value);
 </script>
 
 <template>
@@ -14,7 +17,11 @@ console.log(jobs.value);
         Browse Jobs
       </h2>
       <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
-        <JobListing v-for="job in jobs" :key="job.id" :job="job" />
+        <JobListing
+          v-for="job in jobs.slice(0, limit || jobs.length)"
+          :key="job.id"
+          :job="job"
+        />
       </div>
     </div>
   </section>
