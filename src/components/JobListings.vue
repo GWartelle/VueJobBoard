@@ -5,6 +5,10 @@ import JobListing from "@/components/JobListing.vue";
 
 defineProps({
   limit: Number,
+  showButton: {
+    type: Boolean,
+    default: false,
+  },
 });
 
 const jobs = ref(jobData);
@@ -24,5 +28,13 @@ const jobs = ref(jobData);
         />
       </div>
     </div>
+  </section>
+
+  <section v-if="showButton" class="m-auto max-w-lg my-10 px-6">
+    <a
+      href="/jobs"
+      class="block bg-black text-white text-center py-4 px-6 rounded-xl hover:bg-gray-700"
+      >View All Jobs</a
+    >
   </section>
 </template>
