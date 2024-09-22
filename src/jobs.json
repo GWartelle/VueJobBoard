@@ -97,6 +97,20 @@
         "contactEmail": "buxikilyl@mailinator.com",
         "contactPhone": "+1 (517) 623-9111"
       }
+    },
+    {
+      "id": "88a2",
+      "type": "Remote",
+      "title": "Dorian Cantu",
+      "description": "Dolor nostrud fuga ",
+      "salary": "$150K - $175K",
+      "location": "Voluptatem minima no",
+      "company": {
+        "name": "Ramirez Daugherty LLC",
+        "description": "Aut voluptatibus iru",
+        "contactEmail": "gajugapy@mailinator.com",
+        "contactPhone": "+1 (249) 357-1719"
+      }
     }
   ]
 }
