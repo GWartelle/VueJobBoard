@@ -85,31 +85,17 @@
       }
     },
     {
-      "id": "3fac",
-      "type": "Remote",
-      "title": "Irene Morrison",
-      "description": "Architecto soluta de",
-      "salary": "$60K - $70K",
-      "location": "Ducimus suscipit au",
+      "id": "82b3",
+      "type": "Internship",
+      "title": "Junior Vue Developer Internship",
+      "description": "Nobis est id ut si",
+      "salary": "$70K - $80K",
+      "location": "Reiciendis nesciunt",
       "company": {
-        "name": "Petersen and Riddle Traders",
-        "description": "Aut officia voluptas",
-        "contactEmail": "buxikilyl@mailinator.com",
-        "contactPhone": "+1 (517) 623-9111"
-      }
-    },
-    {
-      "id": "88a2",
-      "type": "Remote",
-      "title": "Dorian Cantu",
-      "description": "Dolor nostrud fuga ",
-      "salary": "$150K - $175K",
-      "location": "Voluptatem minima no",
-      "company": {
-        "name": "Ramirez Daugherty LLC",
-        "description": "Aut voluptatibus iru",
-        "contactEmail": "gajugapy@mailinator.com",
-        "contactPhone": "+1 (249) 357-1719"
+        "name": "Arnold and Berger LLC",
+        "description": "Nobis voluptatibus s",
+        "contactEmail": "qorip@mailinator.com",
+        "contactPhone": "+1 (801) 287-6115"
       }
     }
   ]
