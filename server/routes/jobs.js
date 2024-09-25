@@ -51,7 +51,7 @@ router.put("/:id", getJob, async (req, res) => {
   }
 });
 
-// DELETE one job by ID (This route can be used from the edit page)
+// DELETE one job by ID (This route can be used from the JobView page)
 router.delete("/:id", getJob, async (req, res) => {
   try {
     await Job.findByIdAndDelete(req.params.id);
