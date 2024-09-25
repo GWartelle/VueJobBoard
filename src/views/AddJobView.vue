@@ -38,9 +38,9 @@ const handleSubmit = async () => {
   try {
     const response = await axios.post("/api/jobs", newJob);
     toast.success("Job Added Successfully");
-    router.push(`/jobs/${response.data.id}`);
+    router.push(`/jobs/${response.data._id}`);
   } catch (error) {
-    console.error("Error fetching job", error);
+    console.error("Error adding job", error);
     toast.error("Job Was Not Added");
   }
 };
@@ -98,6 +98,7 @@ const handleSubmit = async () => {
               class="border rounded w-full py-2 px-3"
               rows="4"
               placeholder="Add any job duties, expectations, requirements, etc"
+              required
             ></textarea>
           </div>
 
@@ -152,6 +153,7 @@ const handleSubmit = async () => {
               name="company"
               class="border rounded w-full py-2 px-3"
               placeholder="Company Name"
+              required
             />
           </div>
 
@@ -168,6 +170,7 @@ const handleSubmit = async () => {
               class="border rounded w-full py-2 px-3"
               rows="4"
               placeholder="What does your company do?"
+              required
             ></textarea>
           </div>
 
@@ -200,6 +203,7 @@ const handleSubmit = async () => {
               name="contact_phone"
               class="border rounded w-full py-2 px-3"
               placeholder="Optional phone for applicants"
+              required
             />
           </div>
 

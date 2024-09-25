@@ -2,11 +2,11 @@
   "jobs": [
     {
       "id": "1",
-      "title": "Senior Vue Developer",
       "type": "Full-Time",
+      "title": "Senior Vue Developer",
       "description": "We are seeking a talented Front-End Developer to join our team in Boston, MA. The ideal candidate will have strong skills in HTML, CSS, and JavaScript, with experience working with modern JavaScript frameworks such as Vue or Angular.",
-      "location": "Boston, MA",
       "salary": "$70K - $80K",
+      "location": "Boston, MA",
       "company": {
         "name": "NewTek Solutions",
         "description": "NewTek Solutions is a leading technology company specializing in web development and digital solutions. We pride ourselves on delivering high-quality products and services to our clients while fostering a collaborative and innovative work environment.",
@@ -16,11 +16,11 @@
     },
     {
       "id": "2",
+      "type": "Remote",
       "title": "Front-End Engineer (Vue)",
-      "type": "Full-Time",
-      "description": "Join our team as a Front-End Developer in sunny Miami, FL. We are looking for a motivated individual with a passion for crafting beautiful and responsive web applications. Experience with UI/UX design principles and a strong attention to detail are highly desirable.",
-      "location": "Miami, FL",
+      "description": "Front-End Engineer (Vue)",
       "salary": "$70K - $80K",
+      "location": "Miami, FL",
       "company": {
         "name": "Veneer Solutions",
         "description": "Veneer Solutions is a creative agency specializing in digital design and development. Our team is dedicated to pushing the boundaries of creativity and innovation to deliver exceptional results for our clients.",
@@ -30,11 +30,11 @@
     },
     {
       "id": "3",
-      "title": "Vue.js Developer",
       "type": "Full-Time",
+      "title": "Vue.js Developer",
       "description": "Are you passionate about front-end development? Join our team in vibrant Brooklyn, NY, and work on exciting projects that make a difference. We offer competitive compensation and a collaborative work environment where your ideas are valued.",
-      "location": "Brooklyn, NY",
       "salary": "$70K - $80K",
+      "location": "Brooklyn, NY",
       "company": {
         "name": "Dolor Cloud",
         "description": "Dolor Cloud is a leading technology company specializing in digital solutions for businesses of all sizes. With a focus on innovation and customer satisfaction, we are committed to delivering cutting-edge products and services.",
@@ -44,11 +44,11 @@
     },
     {
       "id": "4",
-      "title": "Vue Front-End Developer",
       "type": "Part-Time",
+      "title": "Vue Front-End Developer",
       "description": "Join our team as a Part-Time Front-End Developer in beautiful Pheonix, AZ. We are looking for a self-motivated individual with a passion for creating engaging user experiences. This position offers flexible hours and the opportunity to work remotely.",
-      "location": "Pheonix, AZ",
       "salary": "$60K - $70K",
+      "location": "Pheonix, AZ",
       "company": {
         "name": "Alpha Elite",
         "description": "Alpha Elite is a dynamic startup specializing in digital marketing and web development. We are committed to fostering a diverse and inclusive workplace where creativity and innovation thrive.",
@@ -58,11 +58,11 @@
     },
     {
       "id": "5",
-      "title": "Full Stack Vue Developer",
       "type": "Full-Time",
+      "title": "Full Stack Vue Developer",
       "description": "Exciting opportunity for a Full-Time Front-End Developer in bustling Atlanta, GA. We are seeking a talented individual with a passion for building elegant and scalable web applications. Join our team and make an impact!",
-      "location": "Atlanta, GA",
       "salary": "$90K - $100K",
+      "location": "Atlanta, GA",
       "company": {
         "name": "Browning Technologies",
         "description": "Browning Technologies is a rapidly growing technology company specializing in e-commerce solutions. We offer a dynamic and collaborative work environment where employees are encouraged to think creatively and innovate.",
@@ -72,11 +72,11 @@
     },
     {
       "id": "6",
-      "title": "Vue Native Developer",
       "type": "Full-Time",
+      "title": "Vue Native Developer",
       "description": "Join our team as a Front-End Developer in beautiful Portland, OR. We are looking for a skilled and enthusiastic individual to help us create innovative web solutions. Competitive salary and great benefits package available.",
-      "location": "Portland, OR",
       "salary": "$100K - $110K",
+      "location": "Portland, OR",
       "company": {
         "name": "Port Solutions INC",
         "description": "Port Solutions is a leading technology company specializing in software development and digital marketing. We are committed to providing our clients with cutting-edge solutions and our employees with a supportive and rewarding work environment.",
@@ -85,6 +85,7 @@
       }
     },
     {
+      "id": "82b3",
       "type": "Internship",
       "title": "Junior Vue Developer Internship",
       "description": "Junior Vue Developer Internship",
@@ -95,8 +96,7 @@
         "description": "Nobis voluptatibus s",
         "contactEmail": "qorip@mailinator.com",
         "contactPhone": "+1 (801) 287-6115"
-      },
-      "id": "82b3"
+      }
     }
   ]
 }

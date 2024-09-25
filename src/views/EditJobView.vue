@@ -130,6 +130,7 @@ onMounted(async () => {
               class="border rounded w-full py-2 px-3"
               rows="4"
               placeholder="Add any job duties, expectations, requirements, etc"
+              required
             ></textarea>
           </div>
 
@@ -184,6 +185,7 @@ onMounted(async () => {
               name="company"
               class="border rounded w-full py-2 px-3"
               placeholder="Company Name"
+              required
             />
           </div>
 
@@ -200,6 +202,7 @@ onMounted(async () => {
               class="border rounded w-full py-2 px-3"
               rows="4"
               placeholder="What does your company do?"
+              required
             ></textarea>
           </div>
 
@@ -232,6 +235,7 @@ onMounted(async () => {
               name="contact_phone"
               class="border rounded w-full py-2 px-3"
               placeholder="Optional phone for applicants"
+              required
             />
           </div>
 
