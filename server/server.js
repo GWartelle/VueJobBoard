@@ -26,7 +26,8 @@ const jobsRouter = require("./routes/jobs");
 app.use("/api/jobs", jobsRouter);
 
 // Serve static files from the Vue app
-app.use(express.static(path.join(__dirname, "./client/dist")));
+const __dirname = path.resolve();
+app.use(express.static(path.join(__dirname, "/client/dist")));
 
 // All remaining requests return the Vue app
 app.get("*", (req, res) => {
