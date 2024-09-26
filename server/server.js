@@ -2,7 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const path = require("path");
-require("dotenv").config();
+require("dotenv").config({ path: "../.env" });
 
 const app = express();
 
@@ -25,13 +25,13 @@ app.get("/", (req, res) => {
 const jobsRouter = require("./routes/jobs");
 app.use("/api/jobs", jobsRouter);
 
-// Serve static files from the Vue app
-app.use(express.static(path.join(__dirname, '../dist')));
+// // Serve static files from the Vue app
+// app.use(express.static(path.join(__dirname, "../dist")));
 
-// All remaining requests return the Vue app
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, '../dist/index.html'));
-});
+// // All remaining requests return the Vue app
+// app.get("*", (req, res) => {
+//   res.sendFile(path.join(__dirname, "../dist/index.html"));
+// });
 
 // Listen on the port
 const port = process.env.PORT || 5000;
