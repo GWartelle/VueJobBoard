@@ -24,8 +24,12 @@ app.get("/", (req, res) => {
 const jobsRouter = require("./routes/jobs");
 app.use("/api/jobs", jobsRouter);
 
-// Listen on port
-const port = process.env.PORT || 5000;
-app.listen(port, () => {
-  console.log(`Server running on port ${port}`);
-});
+// Listen on port in dev mode or export for vercel in production
+if (process.env.NODE_ENV === "development") {
+  const port = process.env.PORT || 5000;
+  app.listen(port, () => {
+    console.log(`Server running on port ${port}`);
+  });
+} else if (process.env.NODE_ENV === "production") {
+  module.exports = app;
+}

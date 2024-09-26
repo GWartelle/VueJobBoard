@@ -1,7 +1,7 @@
 <script setup>
 import { reactive } from "vue";
 import { useToast } from "vue-toastification";
-import router from "@/router";
+import router from "../router";
 import axios from "axios";
 
 const form = reactive({
