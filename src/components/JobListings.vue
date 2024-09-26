@@ -45,7 +45,7 @@ onMounted(async () => {
       <div v-else class="grid grid-cols-1 gap-6 md:grid-cols-3">
         <JobListing
           v-for="job in state.jobs.slice(0, limit || state.jobs.length)"
-          :key="job.id"
+          :key="job._id"
           :job="job"
         />
       </div>
