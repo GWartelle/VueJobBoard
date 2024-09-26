@@ -1,6 +1,7 @@
-const express = require("express");
+import express from "express";
+import Job from "../models/Job.js";
+
 const router = express.Router();
-const Job = require("../models/Job");
 
 // GET all jobs (Corresponds to "/jobs" route in Vue)
 router.get("/", async (req, res) => {
@@ -76,4 +77,4 @@ async function getJob(req, res, next) {
   next();
 }
 
-module.exports = router;
+export default router;

@@ -1,10 +1,13 @@
-const express = require("express");
-const mongoose = require("mongoose");
-const cors = require("cors");
-const path = require("path");
-require("dotenv").config({ path: "../.env" });
+import express from "express";
+import mongoose from "mongoose";
+import cors from "cors";
+import path from "path";
+import dotenv from "dotenv";
+import jobsRouter from "./routes/jobs.js";
 
 const app = express();
+
+dotenv.config({ path: "../.env" });
 
 // Middleware
 app.use(express.json());
@@ -22,7 +25,6 @@ mongoose
 // });
 
 // Job routes
-const jobsRouter = require("./routes/jobs");
 app.use("/api/jobs", jobsRouter);
 
 // Serve static files from the Vue app
