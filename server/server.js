@@ -19,11 +19,6 @@ mongoose
   .then(() => console.log("Connected to MongoDB"))
   .catch((err) => console.error("Error connecting to MongoDB: ", err));
 
-// // Simple route for testing
-// app.get("/", (req, res) => {
-//   res.send("API is running");
-// });
-
 // Job routes
 app.use("/api/jobs", jobsRouter);
 
