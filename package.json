@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "cd api && npm install && cd .. && npm install && npm run build",
+    "vite-build": "vite build",
+    "build": "cd api && npm install && cd .. && npm install && npm run vite-build",
     "start": "node api/index.js",
     "preview": "vite preview"
   },
