@@ -1,7 +1,8 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
-require("dotenv").config({ path: "../.env" });
+const path = require("path");
+require("dotenv").config();
 
 const app = express();
 
@@ -24,12 +25,16 @@ app.get("/", (req, res) => {
 const jobsRouter = require("./routes/jobs");
 app.use("/api/jobs", jobsRouter);
 
-// Listen on port in dev mode or export for vercel in production
-if (process.env.NODE_ENV === "development") {
-  const port = process.env.PORT || 5000;
-  app.listen(port, () => {
-    console.log(`Server running on port ${port}`);
-  });
-} else if (process.env.NODE_ENV === "production") {
-  module.exports = app;
-}
+// Serve static files from the Vue app
+app.use(express.static(path.join(__dirname, '../dist')));
+
+// All remaining requests return the Vue app
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, '../dist/index.html'));
+});
+
+// Listen on the port
+const port = process.env.PORT || 5000;
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
+});
