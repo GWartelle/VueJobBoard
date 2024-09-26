@@ -26,11 +26,11 @@ const jobsRouter = require("./routes/jobs");
 app.use("/api/jobs", jobsRouter);
 
 // Serve static files from the Vue app
-app.use(express.static(path.join(__dirname, "../dist")));
+app.use(express.static(path.join(__dirname, "./client/dist")));
 
 // All remaining requests return the Vue app
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../dist/index.html"));
+  res.sendFile(path.join(__dirname, "client", "dist", "index.html"));
 });
 
 // Listen on the port
