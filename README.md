@@ -10,7 +10,7 @@
 <!-- PROJECT TITLE -->
 
 <div align="center">
-  <a href="https://chatapp-oy8v.onrender.com/" target="_blank" rel="noopener noreferrer">
+  <a href="https://vuejobboard.onrender.com/" target="_blank" rel="noopener noreferrer">
     <img src="./client/public/vue-svgrepo-com.svg" alt="VueJobs Logo"  height="70">
   </a>
 </div>
